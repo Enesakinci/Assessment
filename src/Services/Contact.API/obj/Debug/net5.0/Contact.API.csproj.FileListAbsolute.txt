@@ -26,3 +26,16 @@ D:\Project\Git\Assessment\src\Services\Contact.API\obj\Debug\net5.0\Contact.API.
 D:\Project\Git\Assessment\src\Services\Contact.API\obj\Debug\net5.0\ref\Contact.API.dll
 D:\Project\Git\Assessment\src\Services\Contact.API\obj\Debug\net5.0\Contact.API.pdb
 D:\Project\Git\Assessment\src\Services\Contact.API\obj\Debug\net5.0\Contact.API.genruntimeconfig.cache
+D:\Project\Git\Assessment\src\Services\Contact.API\obj\Debug\net5.0\Contact.API.csprojAssemblyReference.cache
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Humanizer.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Npgsql.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Project\Git\Assessment\src\Services\Contact.API\bin\Debug\net5.0\AutoMapper.dll
