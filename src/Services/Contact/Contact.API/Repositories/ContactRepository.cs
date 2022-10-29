@@ -13,10 +13,10 @@ namespace Contact.API.Repositories
     {
         private readonly AssessmentContext _context;
         private readonly IMapper _mapper;
-        public ContactRepository(IMapper mapper)
+        public ContactRepository(IMapper mapper, AssessmentContext context)
         {
             _mapper = mapper;
-            _context = new AssessmentContext();
+            _context = context;
         }
         public async Task<IEnumerable<ContactResponse>> GetAllContact()
         {

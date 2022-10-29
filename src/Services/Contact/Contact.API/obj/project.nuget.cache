@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dLUjIfOuWCJaAv1Gk5We0TchlqezYtLOcvcE+iygXo1Ibdu/2AvwAIjGVJ6aC7TM9mMGcDYOs+KK11ODi1nYyA==",
+  "dgSpecHash": "dNaC4PGVxn+7RJt7dxChQXr/ZcAkmaC197251u8+PuDSoDUDCUm3Uz+EDa0Tm0LgmEeg4UM+RUt6cIliTjkazg==",
   "success": true,
-  "projectFilePath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact.API\\Contact.API.csproj",
+  "projectFilePath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact\\Contact.API\\Contact.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\enes.akinci\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\enes.akinci\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

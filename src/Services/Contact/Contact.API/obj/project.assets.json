@@ -5547,11 +5547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact.API\\Contact.API.csproj",
+      "projectUniqueName": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact\\Contact.API\\Contact.API.csproj",
       "projectName": "Contact.API",
-      "projectPath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact.API\\Contact.API.csproj",
+      "projectPath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact\\Contact.API\\Contact.API.csproj",
       "packagesPath": "C:\\Users\\enes.akinci\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact.API\\obj\\",
+      "outputPath": "D:\\Project\\Git\\Assessment\\src\\Services\\Contact\\Contact.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\enes.akinci\\AppData\\Roaming\\NuGet\\NuGet.Config",
