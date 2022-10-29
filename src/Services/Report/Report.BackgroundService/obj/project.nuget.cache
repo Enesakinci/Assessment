@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "z2eyiAfShMHojp5b2OjSE/of+y2+3yaf3wWMnUcgR9eSMnVInTtI1ePFEi1VJc6Bym8c/lYaoA3fCIL0lc5ZNg==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\Git\\Assessment\\src\\Services\\Report\\Report.BackgroundService\\Report.BackgroundService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enes.akinci\\.nuget\\packages\\confluent.kafka\\1.9.3\\confluent.kafka.1.9.3.nupkg.sha512",
+    "C:\\Users\\enes.akinci\\.nuget\\packages\\librdkafka.redist\\1.9.2\\librdkafka.redist.1.9.2.nupkg.sha512",
+    "C:\\Users\\enes.akinci\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
