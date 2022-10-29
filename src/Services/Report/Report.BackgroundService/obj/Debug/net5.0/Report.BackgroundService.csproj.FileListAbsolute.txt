@@ -40,3 +40,4 @@ D:\Project\Git\Assessment\src\Services\Report\Report.BackgroundService\obj\Debug
 D:\Project\Git\Assessment\src\Services\Report\Report.BackgroundService\obj\Debug\net5.0\ref\Report.BackgroundService.dll
 D:\Project\Git\Assessment\src\Services\Report\Report.BackgroundService\obj\Debug\net5.0\Report.BackgroundService.pdb
 D:\Project\Git\Assessment\src\Services\Report\Report.BackgroundService\obj\Debug\net5.0\Report.BackgroundService.genruntimeconfig.cache
+D:\Project\Git\Assessment\src\Services\Report\Report.BackgroundService\obj\Debug\net5.0\Report.BackgroundService.csprojAssemblyReference.cache

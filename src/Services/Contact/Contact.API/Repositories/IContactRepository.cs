@@ -10,5 +10,8 @@ namespace Contact.API.Repositories
     {
 
         Task<IEnumerable<ContactResponse>> GetAllContact();
+        Task<bool> DeleteContact(Guid uuid);
+        Task<bool> AddContactDetail(ContactDetailAddRequest contactDetailResponse);
+        Task<bool> AddContact(ContactAddRequest contactAddRequest);
     }
 }

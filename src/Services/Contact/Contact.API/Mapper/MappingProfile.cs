@@ -12,6 +12,7 @@ namespace Contact.API.Mapper
         public MappingProfile()
         {
             CreateMap<Contact.API.Entities.Contact,ContactResponse>();
+            CreateMap<Contact.API.Entities.ContactDetail,ContactDetailResponse>();
         }
     }
 }

@@ -7,14 +7,18 @@ namespace Contact.API.Entities
 {
     public partial class Contact
     {
+        public Contact()
+        {
+            ContactDetails = new HashSet<ContactDetail>();
+        }
+
         public Guid Uuid { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Company { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string Location { get; set; }
         public bool? IsActive { get; set; }
         public DateTime? CreatedDateTime { get; set; }
+
+        public virtual ICollection<ContactDetail> ContactDetails { get; set; }
     }
 }

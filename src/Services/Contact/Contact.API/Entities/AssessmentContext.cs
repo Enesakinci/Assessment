@@ -18,6 +18,7 @@ namespace Contact.API.Entities
         }
 
         public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<ContactDetail> ContactDetails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -34,11 +35,36 @@ namespace Contact.API.Entities
 
             modelBuilder.Entity<Contact>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Uuid)
+                    .HasName("Contact_pkey");
 
                 entity.ToTable("Contact");
 
                 entity.HasComment("for person informations");
+
+                entity.Property(e => e.Uuid)
+                    .HasColumnName("UUID")
+                    .HasDefaultValueSql("gen_random_uuid()");
+
+                entity.Property(e => e.CreatedDateTime)
+                    .HasColumnType("timestamp with time zone")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.IsActive).HasDefaultValueSql("true");
+            });
+
+            modelBuilder.Entity<ContactDetail>(entity =>
+            {
+                entity.HasKey(e => e.Uuid)
+                    .HasName("ContactDetail_pkey");
+
+                entity.ToTable("ContactDetail");
+
+                entity.Property(e => e.Uuid)
+                    .HasColumnName("UUID")
+                    .HasDefaultValueSql("gen_random_uuid()");
+
+                entity.Property(e => e.ContactUuid).HasColumnName("ContactUUID");
 
                 entity.Property(e => e.CreatedDateTime)
                     .HasColumnType("timestamp with time zone")
@@ -46,9 +72,11 @@ namespace Contact.API.Entities
 
                 entity.Property(e => e.IsActive).HasDefaultValueSql("true");
 
-                entity.Property(e => e.Uuid)
-                    .HasColumnName("UUID")
-                    .HasDefaultValueSql("gen_random_uuid()");
+                entity.HasOne(d => d.ContactUu)
+                    .WithMany(p => p.ContactDetails)
+                    .HasForeignKey(d => d.ContactUuid)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("ContactDetail_fkey");
             });
 
             OnModelCreatingPartial(modelBuilder);

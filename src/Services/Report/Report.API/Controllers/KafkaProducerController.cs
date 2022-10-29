@@ -1,15 +1,10 @@
 ﻿using Confluent.Kafka;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Report.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
     [Route("api/report")]
     public class KafkaProducerController : ControllerBase
     {
@@ -20,8 +15,8 @@ namespace Report.API.Controllers
 
         private readonly string topic = "TestTopic";
 
-        [HttpPost]
-        public IActionResult Post([FromQuery] string message)
+        [HttpPost("CreateReport")]
+        public IActionResult CreateReport([FromQuery] string message)
         {
             return Created(string.Empty, SendToKafka(topic, message));
         }

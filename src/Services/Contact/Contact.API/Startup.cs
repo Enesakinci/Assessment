@@ -33,7 +33,9 @@ namespace Contact.API
         {
             services.AddDbContext<AssessmentContext>(options =>
                     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+                   options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );  
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact.API", Version = "v1" });

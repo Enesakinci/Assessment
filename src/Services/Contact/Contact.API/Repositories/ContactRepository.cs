@@ -18,9 +18,62 @@ namespace Contact.API.Repositories
             _mapper = mapper;
             _context = context;
         }
+
+        public async Task<bool> AddContact(ContactAddRequest contactAddRequest)
+        {
+            try
+            {
+                await _context.Contacts.AddAsync(new Entities.Contact
+                {
+                    Company = contactAddRequest.Company,
+                    Name = contactAddRequest.Name,
+                    Surname = contactAddRequest.Surname,
+                });
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception) { return false; }
+        }
+
+        public async Task<bool> AddContactDetail(ContactDetailAddRequest contactDetailAddRequest)
+        {
+            try
+            {
+                await _context.ContactDetails.AddAsync(new ContactDetail
+                {
+                    Location = contactDetailAddRequest.Location,
+                    Email = contactDetailAddRequest.Email,
+                    Phone = contactDetailAddRequest.Phone,
+                    ContactUuid = contactDetailAddRequest.ContactUuid,
+
+                });
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception) { return false; }
+        }
+
+        public async Task<bool> DeleteContact(Guid uuid)
+        {
+            try
+            {
+                var deleteContact = await _context.Contacts.Where(x => x.IsActive == true && x.Uuid == uuid).FirstOrDefaultAsync();
+                if (deleteContact != null)
+                {
+                    var deleteContactDetail = await _context.ContactDetails.Where(x => x.IsActive == true && x.ContactUuid == uuid).FirstOrDefaultAsync();
+                    deleteContact.IsActive = false;
+                    if (deleteContactDetail != null)
+                        deleteContactDetail.IsActive = false;
+                }
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception) { return false; }
+        }
+
         public async Task<IEnumerable<ContactResponse>> GetAllContact()
         {
-            var data = await _context.Contacts.Where(x => x.IsActive == true).ToListAsync();
+            var data = await _context.Contacts.Where(x => x.IsActive == true).Include(x => x.ContactDetails.Where(y => y.IsActive == true)).ToListAsync();
             return _mapper.Map<IEnumerable<ContactResponse>>(data);
         }
     }

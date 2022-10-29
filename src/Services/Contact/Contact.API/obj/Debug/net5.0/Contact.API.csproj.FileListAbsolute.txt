@@ -80,3 +80,10 @@ D:\Project\Git\Assessment\src\Services\Contact\Contact.API\obj\Debug\net5.0\Cont
 D:\Project\Git\Assessment\src\Services\Contact\Contact.API\obj\Debug\net5.0\ref\Contact.API.dll
 D:\Project\Git\Assessment\src\Services\Contact\Contact.API\obj\Debug\net5.0\Contact.API.pdb
 D:\Project\Git\Assessment\src\Services\Contact\Contact.API\obj\Debug\net5.0\Contact.API.genruntimeconfig.cache
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Grpc.Core.Api.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Grpc.Net.Client.dll
+D:\Project\Git\Assessment\src\Services\Contact\Contact.API\bin\Debug\net5.0\Grpc.Net.Common.dll

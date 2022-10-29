@@ -52,3 +52,4 @@ D:\Project\Git\Assessment\src\Services\Report\Report.API\obj\Debug\net5.0\Report
 D:\Project\Git\Assessment\src\Services\Report\Report.API\obj\Debug\net5.0\ref\Report.API.dll
 D:\Project\Git\Assessment\src\Services\Report\Report.API\obj\Debug\net5.0\Report.API.pdb
 D:\Project\Git\Assessment\src\Services\Report\Report.API\obj\Debug\net5.0\Report.API.genruntimeconfig.cache
+D:\Project\Git\Assessment\src\Services\Report\Report.API\obj\Debug\net5.0\Report.API.csprojAssemblyReference.cache
